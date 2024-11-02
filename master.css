@@ -1,0 +1,125 @@
+:root{
+    --main-color: #007bff;
+    --second-color : #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+  }
+ nav.navbar{
+    background-color: var(--main-color) !important;
+ }
+
+ nav.navbar li.nav-item a{
+    transition: .3s;
+ }
+
+
+
+ @media (max-width:767px) {
+    .navbar-toggler{
+        background-color: #fff !important;
+        border: none !important;
+        outline: none !important;
+    }
+    nav.navbar li.nav-item a:hover{
+        padding-left: 5px;
+        opacity: .7;
+     }
+    
+ }
+
+ @media (min-width:768px){
+    nav.navbar li.nav-item a:hover{
+        transform: translatey(-2px);
+        opacity: .7;
+     }
+ }
+  .post {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .post h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  .post p {
+    color: #666;
+    line-height: 1.6;
+  }
+  .post .btn-primary {
+    background-color: var(--main-color);
+    border: none;
+  }
+  .post .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  .sidebar {
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  .sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  .sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .sidebar ul li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .sidebar ul li a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: .3s;
+  }
+  .sidebar ul li a:hover {
+    padding-left: 5px;
+    opacity: .6;
+  }
+  .footer {
+    background-color: #343a40;
+    color: var(--second-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .footer p {
+    margin: 0;
+  }
+
+  .footer form .form-control{
+    width: 70% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .up{
+    background-color: var(--main-color);
+    width: fit-content;
+    padding: 5px;
+    color: var(--second-color);
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: -50px;
+}
+
+.up.show{
+    right: 20px;
+}
